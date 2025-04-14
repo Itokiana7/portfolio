@@ -1,73 +1,20 @@
 <section class="px-8 py-12 max-w-7xl mx-auto">
-    <h2 class="text-2xl md:text-3xl font-bold text-slate-800">Skills</h2>
+    <h2 class="text-4xl font-bold text-gray-900 mb-10">Skills</h2>
     <p class="text-slate-400 mt-1">Hard Skills</p>
 
-    <!-- Cards grid -->
-    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-      
-      <!-- Card -->
-      <div class="relative bg-sky-300 p-4 rounded-xl shadow-sm">
-        <!-- NEW ribbon -->
-        <div class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">1</div>
-        <!-- Content -->
-        <h3 class="text-base font-medium mb-4">HTML/CSS</h3>
-        <span class="bg-green-200 text-green-800 text-xs px-3 py-1 rounded-full">HTML/CSS</span>
+      <!-- Cards HardSkills grid -->
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">     
+        <!-- Card -->
+        <app-card-skill *ngFor="let skill of listHardSkills" [id]="skill.id" [skill]="skill.name"></app-card-skill>  
+        
       </div>
 
-      <!-- Card -->
-      <div class="relative bg-sky-300 p-4 rounded-xl shadow-sm">
-        <div class="absolute top-0 right-0 bg-cyan-900 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">2</div>
-        <h3 class="text-base font-medium mb-4">Javascript</h3>
-        <span class="bg-green-200 text-green-800 text-xs px-3 py-1 rounded-full">Javascript</span>
-      </div>
+      <p class="text-slate-400 mt-10">Soft Skills</p>
 
-      <!-- Card -->
-      <div class="relative bg-sky-300 p-4 rounded-xl shadow-sm">
-        <div class="absolute top-0 right-0 bg-cyan-900 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">3</div>
-        <h3 class="text-base font-medium mb-4">Php</h3>
-        <span class="bg-green-200 text-green-800 text-xs px-3 py-1 rounded-full">Php</span>
+      <!-- Cards SoftSkills grid -->
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">     
+        <!-- Card -->
+        <app-card-skill *ngFor="let skill of listSoftSkills" [id]="skill.id" [skill]="skill.name"></app-card-skill>
+        
       </div>
-
-      <!-- Card -->
-      <div class="relative bg-sky-300 p-4 rounded-xl shadow-sm">
-        <div class="absolute top-0 right-0 bg-cyan-900 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">4</div>
-        <h3 class="text-base font-medium mb-4">Laravel</h3>
-        <span class="bg-green-200 text-green-800 text-xs px-3 py-1 rounded-full">Laravel</span>
-      </div>
-
-      <!-- Card -->
-      <div class="relative bg-sky-300 p-4 rounded-xl shadow-sm">
-        <div class="absolute top-0 right-0 bg-cyan-900 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">5</div>
-        <h3 class="text-base font-medium mb-4">Angular</h3>
-        <span class="bg-green-200 text-green-800 text-xs px-3 py-1 rounded-full">Angular</span>
-      </div>
-
-      <!-- Card -->
-      <div class="relative bg-sky-300 p-4 rounded-xl shadow-sm">
-        <div class="absolute top-0 right-0 bg-cyan-900 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">6</div>
-        <h3 class="text-base font-medium mb-4">C#.net</h3>
-        <span class="bg-green-200 text-green-800 text-xs px-3 py-1 rounded-full">C#.net</span>
-      </div>
-
-      <!-- Card -->
-      <div class="relative bg-sky-300 p-4 rounded-xl shadow-sm">
-        <div class="absolute top-0 right-0 bg-cyan-900 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">7</div>
-        <h3 class="text-base font-medium mb-4">Maintenance et Réseaux</h3>
-        <span class="bg-green-200 text-green-800 text-xs px-3 py-1 rounded-full">Maintenance et Réseaux</span>
-      </div>
-
-      <!-- Card -->
-      <div class="relative bg-sky-300 p-4 rounded-xl shadow-sm">
-        <div class="absolute top-0 right-0 bg-cyan-900 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">8</div>
-        <h3 class="text-base font-medium mb-4">Git</h3>
-        <span class="bg-green-200 text-green-800 text-xs px-3 py-1 rounded-full">Git</span>
-      </div>
-
-      <!-- Card -->
-      <div class="relative bg-sky-300 p-4 rounded-xl shadow-sm">
-        <div class="absolute top-0 right-0 bg-cyan-900 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">9</div>
-        <h3 class="text-base font-medium mb-4">Adobe Illustrator</h3>
-        <span class="bg-green-200 text-green-800 text-xs px-3 py-1 rounded-full">Adobe Illustrator</span>
-      </div>
-    </div>
   </section>

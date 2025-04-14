@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { NavbarComponent } from '../../component/navbar/navbar.component';
 import { HeaderComponent } from '../../component/header/header.component';
 import { SkillsComponent } from '../../component/skills/skills.component';
+import { ExperienceComponent } from '../../component/experience/experience.component';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,8 @@ import { SkillsComponent } from '../../component/skills/skills.component';
   imports: [
     NavbarComponent,
     HeaderComponent,
-    SkillsComponent
+    SkillsComponent,
+    ExperienceComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
