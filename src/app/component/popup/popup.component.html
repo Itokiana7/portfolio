@@ -1,0 +1,31 @@
+<div *ngIf="show" class="z-10 fixed inset-0 flex items-center justify-center bg-gradient-to-r from-gray-400 to-white-400 bg-opacity-0">
+    <div class="relative bg-white p-6 rounded-lg shadow-lg w-80">
+      <!-- Close Button -->
+      <button class="absolute top-2 right-2 text-gray-500 hover:text-gray-700" (click)="closePopup()">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+  
+      <!-- Icon (simplified as a placeholder; replace with actual icon) -->
+      <div class="flex justify-center mb-4">
+        <div class="text-green-500 text-4xl">
+          <!-- Placeholder for icon; you can use an actual icon library like FontAwesome -->
+          <img src="profil.jpg" alt="Itokiana" class="w-12 h-12">
+        </div>
+      </div>
+  
+      <!-- Title -->
+      <h2 class="text-center text-lg font-semibold text-gray-800 mb-2">You visite my website</h2>
+  
+      <!-- Description -->
+      <p class="text-center text-sm text-gray-600 mb-4">"This is my resume , if you want to know more about me , call me and let's talk together 😉 !"</p>
+  
+      <!-- Button -->
+      <div class="flex justify-center">
+        <button (click)="closePopup()" class="bg-gradient-to-r from-pink-500 to-orange-500 text-white px-6 py-2 rounded-md hover:from-pink-600 hover:to-orange-600">
+          Thanks you!!!
+        </button>
+      </div>
+    </div>
+  </div>

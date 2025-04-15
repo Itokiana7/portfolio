@@ -6,6 +6,7 @@ import { NavbarComponent } from '../../component/navbar/navbar.component';
 import { HeaderComponent } from '../../component/header/header.component';
 import { SkillsComponent } from '../../component/skills/skills.component';
 import { ExperienceComponent } from '../../component/experience/experience.component';
+import { FooterComponent } from '../../component/footer/footer.component';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,8 @@ import { ExperienceComponent } from '../../component/experience/experience.compo
     NavbarComponent,
     HeaderComponent,
     SkillsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    FooterComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

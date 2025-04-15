@@ -5,15 +5,16 @@
         <span class="text-blue-600">Ito</span>kiana
       </div>
       <ul class="hidden md:flex gap-8 text-sm font-medium">
-        <li><a href="#" class="hover:text-blue-600">Portfolio</a></li>
-        <li><a href="#" class="hover:text-blue-600">Skills</a></li>
-        <li><a href="#" class="hover:text-blue-600">Expérience</a></li>
+        <li><span href="#" class="hover:text-blue-600 cursor-pointer">Portfolio</span></li>
+        <li><span href="#" class="hover:text-blue-600 cursor-pointer">About me</span></li>
+        <li><span href="#" class="hover:text-blue-600 cursor-pointer">Skills</span></li>
+        <li><span href="#" class="hover:text-blue-600 cursor-pointer">Expérience</span></li>
       </ul>
-      <a href="#" class="bg-white text-black font-semibold px-4 py-2 rounded hover:bg-blue-600 hover:text-white transition-all">
+      <a href="#" (click)="onPopup()" class="bg-white text-black font-semibold px-4 py-2 rounded hover:bg-blue-600 hover:text-white transition-all">
         Contact Me
       </a>
     </nav>
-  
+  <app-popup [show]="show" (close)="onPopup()"></app-popup>
     
   <!-- </div> -->
   
